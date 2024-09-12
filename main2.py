@@ -1,3 +1,7 @@
+#Topic: Django Signals - 3 question
+
+
+#This proves that Django signals run in the same database transaction as the caller. If the signal handler fails, the transaction is rolled back, meaning none of the changes (including the save() call) persist to the database.
 from django.db import models, transaction
 from django.db.models.signals import post_save
 from django.dispatch import receiver
