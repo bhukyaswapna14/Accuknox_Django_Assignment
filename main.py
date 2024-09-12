@@ -1,3 +1,8 @@
+#Topic: Django Signals - 1 question
+
+
+#This behavior shows that Django signals are executed synchronously by default, as the sender waits for the receiver to finish its task before continuing.
+
 import time
 from django.dispatch import receiver, Signal
 
