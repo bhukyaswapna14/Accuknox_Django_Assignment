@@ -1,3 +1,8 @@
+#Topic: Django Signals - 2 question
+
+#This simple example demonstrates that Django signals run in the same thread as the caller, because both the caller and the signal handler have the same thread ID.
+
+
 import threading
 from django.db import models
 from django.db.models.signals import post_save
