@@ -1,0 +1,9 @@
+Topic - Django Signals
+1) By default, Django signals are executed synchronously. This means the receiver function for a signal is called immediately when the signal is sent, and the signal sender will wait for the receiver to complete before proceeding.
+2) Yes, by default, Django signals run in the same thread as the caller. This means that the signal handler is executed in the same thread that sends the signal.
+3) Yes, by default, Django signals run in the same database transaction as the caller. This means that if the caller is part of a transaction and something goes wrong during signal execution, the entire transaction (including the signal's effect) will be rolled back.
+
+
+Topic - Custom Classes in Python
+1) The _init_ method initializes the length and width of the rectangle.
+2) The _iter_ method allows us to iterate over an instance of Rectangle. It returns an iterator over a list that contains the length and width in the desired format ({'length': <VALUE>} and {'width': <VALUE>}).
